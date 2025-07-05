@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نبتتي</title>
+    <link rel="icon" href="./images/icon.ico" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- CSS -->
+    <!-- JS -->
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="top-header d-flex align-items-center py-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-4">
+              <a class="logo" href="#">
+                <span>نبتتي</span>
+                <i class="fa-solid fa-seedling"></i>
+              </a>
+            </div>
+            <div class="col-6 col-md-4">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="ادخل اسم النبات للبحث"
+              />
+            </div>
+            <div
+              class="col-md-4 d-flex align-items-center d-none d-md-flex justify-content-end icons"
+            >
+              <a
+                href="#"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#card"
+                aria-controls="staticBackdrop"
+              >
+                <span>السلة</span>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+
+              <a
+                href="#"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#fav"
+                aria-controls="staticBackdrop"
+              >
+                <span>المفضلة</span>
+                <i class="fa-solid fa-bookmark"></i>
+              </a>
+
+              <a
+                href="#"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#login"
+                aria-controls="staticBackdrop"
+              >
+                <span>الدخول</span>
+                <i class="fa-solid fa-right-to-bracket"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottum-header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button
+              class="navbar-toggler menu-icon"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div>
+              <button
+                class="navbar-toggler menu-icon"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#card"
+                aria-controls="staticBackdrop"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+              <button
+                class="navbar-toggler menu-icon"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#fav"
+                aria-controls="staticBackdrop"
+              >
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+
+              <button
+                class="navbar-toggler menu-icon"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#login"
+                aria-controls="staticBackdrop"
+              >
+                <i class="fa-solid fa-right-to-bracket"></i>
+              </button>
+            </div>
+
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0 d-flex">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category.html">نباتات داخلية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category.html">نباتات خارجية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category.html">مستلزمات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category.html">من نحن</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category.html"
+                    >سياسة التوصيل والإرجاع</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category.html">تواصل معنا</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category.html"
+                    >نصائح للعناية بالنباتات</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+
+
+
+<!-- Start bunner -->
+<section class="bunner">
+  <h1 class="bunner-title">إتمام عملية الشراء</h1>
+</section>
+<!-- End bunner -->
+
+<section>
+  <div class="container">
+    <div class="row my-5">
+      <!-- معلومات الشحن -->
+      <div class="col-md-6">
+        <div class="user-info">
+          <h4>معلومات التوصيل</h4>
+
+          <div>
+            <label class="form-label">الاسم الكامل:</label>
+            <input type="text" placeholder="أدخل اسمك الكامل" class="form-control">
+          </div>
+
+          <div class="mt-3">
+            <label class="form-label">البريد الإلكتروني:</label>
+            <input type="email" placeholder="example@email.com" class="form-control">
+          </div>
+
+          <div class="mt-3">
+            <label class="form-label">رقم الهاتف:</label>
+            <input type="tel" placeholder="مثال: 0912xxxxxxx" class="form-control">
+          </div>
+
+          <div class="mt-3">
+            <label class="form-label">الدولة:</label>
+            <select class="form-select">
+              <option selected disabled>اختر الدولة</option>
+              <option value="syria">سوريا</option>
+              <option value="turkey">تركيا</option>
+              <option value="egypt">مصر</option>
+              <option value="ksa">السعودية</option>
+              <option value="uae">الإمارات</option>
+              <option value="jordan">الأردن</option>
+            </select>
+          </div>
+
+          <div class="mt-3">
+            <label class="form-label">المحافظة:</label>
+            <select class="form-select">
+              <option selected disabled>اختر المحافظة</option>
+              <option value="aleppo">حلب</option>
+              <option value="damascus">دمشق</option>
+              <option value="homs">حمص</option>
+              <option value="latakia">اللاذقية</option>
+            </select>
+          </div>
+
+          <div class="mt-3">
+            <label class="form-label">العنوان الكامل:</label>
+            <textarea class="form-control" rows="4" placeholder="اكتب عنوان التوصيل بالتفصيل..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- ملخص الطلب -->
+      <div class="col-md-6">
+        <div class="row shopping-row m-0 p-0 pb-4">
+          <!-- رأس الجدول -->
+          <div class="col-12 shopping-card d-flex justify-content-between align-items-center">
+            <p><strong>المنتج</strong></p>
+            <p><strong>السعر</strong></p>
+            <p><strong>الكمية</strong></p>
+            <p><strong>الإجمالي</strong></p>
+          </div>
+
+          <!-- المنتجات -->
+          <div class="col-12 shopping-card d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column">
+              <img class="img-fluid" width="70" src="./images/pro/pro5.png" alt="" />
+              <p>ألوفيرا</p>
+            </div>
+            <p>12$</p>
+            <div class="btn-group">
+              <button type="button" class="btn btn-border">+</button>
+              <button type="button" class="btn btn-border">4</button>
+              <button type="button" class="btn btn-border">-</button>
+            </div>
+            <p>48$</p>
+          </div>
+
+          <div class="col-12 shopping-card d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column">
+              <img class="img-fluid" width="70" src="./images/pro/pro4.png" alt="" />
+              <p>سرخس البوسطن</p>
+            </div>
+            <p>14$</p>
+            <div class="btn-group">
+              <button type="button" class="btn btn-border">+</button>
+              <button type="button" class="btn btn-border">1</button>
+              <button type="button" class="btn btn-border">-</button>
+            </div>
+            <p>14$</p>
+          </div>
+
+          <div class="col-12 shopping-card d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column">
+              <img class="img-fluid" width="70" src="./images/pro/pro2.png" alt="" />
+              <p>زنبق السلام</p>
+            </div>
+            <p>10$</p>
+            <div class="btn-group">
+              <button type="button" class="btn btn-border">+</button>
+              <button type="button" class="btn btn-border">2</button>
+              <button type="button" class="btn btn-border">-</button>
+            </div>
+            <p>20$</p>
+          </div>
+        </div>
+
+        <!-- كوبون الخصم -->
+        <div class="code d-flex my-3 justify-content-between">
+          <div class="d-flex gap-2 w-75">
+            <input type="text" placeholder="أدخل رمز الخصم" class="form-control" />
+            <button class="btn btn-color">تطبيق</button>
+          </div>
+          <div>
+            <p><strong>الإجمالي: 82$</strong></p>
+          </div>
+        </div>
+
+        <!-- خيارات الدفع -->
+        <div class="payments mt-5">
+          <h4>طريقة الدفع</h4>
+
+          <div>
+            <input type="radio" name="pay" id="paypal1">
+            <label for="paypal1" class="form-label">الدفع عبر باي بال</label>
+          </div>
+
+          <div>
+            <input type="radio" name="pay" id="paypal2">
+            <label for="paypal2" class="form-label">الدفع عند الاستلام</label>
+          </div>
+
+          <div>
+            <input type="radio" name="pay" id="card">
+            <label for="card" class="form-label">الدفع باستخدام بطاقة بنكية</label>
+          </div>
+
+          <!-- تفاصيل البطاقة -->
+          <div class="mt-3">
+            <h5>ادخل تفاصيل البطاقة</h5>
+            <div>
+              <label class="form-label">رقم البطاقة</label>
+              <input type="text" class="form-control" placeholder="0000 - 0000 - 0000 - 0000">
+            </div>
+
+            <div class="d-flex gap-2 mt-3">
+              <div class="w-100">
+                <label class="form-label">رمز الأمان (CVC)</label>
+                <input type="text" class="form-control" placeholder="123">
+              </div>
+              <div class="w-100">
+                <label class="form-label">تاريخ الانتهاء</label>
+                <input type="text" class="form-control" placeholder="MM / YY">
+              </div>
+            </div>
+
+            <button class="btn btn-color mt-3 w-100">إتمام الطلب</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <div class="col first-f">
+            <a href="#">
+              <span>نبتتي</span>
+              <i class="fa-solid fa-seedling"></i>
+            </a>
+            <p>
+              نبتتي هو وجهتك المثالية لعالم النباتات. نقدم لك باقة مختارة بعناية
+              من النباتات الداخلية والخارجية، لتضيف الجمال والحياة إلى منزلك أو
+              مكتبك بكل بساطة.
+            </p>
+            <ul class="navbar-nav">
+              <li>
+                <i class="fa-solid fa-location-dot"></i> تركيا – كهرمان مرعش
+              </li>
+              <li><i class="fa-solid fa-phone"></i> 0537 123 45 67</li>
+              <li><i class="fa-solid fa-envelope"></i> info@nabtati.com</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h4>روابط مهمة</h4>
+            <ul class="navbar-nav">
+              <li><a href="#">الرئيسية</a></li>
+              <li><a href="#">من نحن</a></li>
+              <li><a href="#">نصائح العناية بالنباتات</a></li>
+              <li><a href="#">سياسة التوصيل</a></li>
+              <li><a href="#">سياسة الإرجاع والاستبدال</a></li>
+              <li><a href="#">تواصل معنا</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h4>التصنيفات</h4>
+            <ul class="navbar-nav">
+              <li><a href="#">نباتات داخلية</a></li>
+              <li><a href="#">نباتات خارجية</a></li>
+              <li><a href="#">الصباريات والعصاريات</a></li>
+              <li><a href="#">نباتات مزهرة</a></li>
+              <li><a href="#">أشجار زينة صغيرة</a></li>
+              <li><a href="#">مستلزمات الزراعة والعناية</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h4>النشرة البريدية</h4>
+            <p>
+              انضم إلى نشرتنا ليصلك كل جديد حول العروض الحصرية، والنباتات
+              الموسمية، ونصائح العناية.
+            </p>
+            <form action="">
+              <input
+                type="text"
+                placeholder="أدخل بريدك الإلكتروني"
+                class="form-control"
+              />
+              <button class="btn btn-color w-100 mt-3">اشترك الآن</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 mt-4 align-items-center">
+          <div class="col">
+            <img src="./images/payments.png" alt="طرق الدفع" />
+          </div>
+          <div class="col text-md-end text-center">
+            <p class="text-white">© جميع الحقوق محفوظة 2025 – متجر نبتتي</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Serch -->
+
+    <div
+      class="offcanvas offcanvas-start fillter-sect"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">البحث</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <h4 class="mb-2">فلتر البحث</h4>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="ابحث عن النبات"
+          />
+          <select class="form-select mt-3">
+            <option>نباتات زينة</option>
+            <option>نباتات داخلية</option>
+            <option>نباتات خارجية</option>
+            <option>أشجار صغيرة</option>
+            <option>صبار</option>
+          </select>
+          <hr />
+          <h4 class="mb-2">فلتر حسب النوع</h4>
+          <div class="flt-radio">
+            <div>
+              <input name="fli" type="radio" class="form-check-input" />
+              <label for="">صباريات</label>
+            </div>
+            <div>
+              <input name="fli" type="radio" class="form-check-input" />
+              <label for="">عصاريات</label>
+            </div>
+            <div>
+              <input name="fli" type="radio" class="form-check-input" />
+              <label for="">زهور</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Serch -->
+
+    <!-- Card -->
+
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="card"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">السلة</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+          <div
+            class="col shopping-card d-flex justify-content-around align-items-center"
+          >
+            <img class="img-fluid w-25" src="./images/pro/pro2.png" alt="" />
+            <p>زنبق السلام</p>
+            <div class="btn-group">
+              <button type="button" class="btn btn-border">+</button>
+              <button type="button" class="btn btn-border">1</button>
+              <button type="button" class="btn btn-border">-</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row shopping-row">
+          <div
+            class="col shopping-card d-flex justify-content-around align-items-center"
+          >
+            <img class="img-fluid w-25" src="./images/pro/pro4.png" alt="" />
+            <p>سرخس البوسطن</p>
+            <div class="btn-group">
+              <button type="button" class="btn btn-border">+</button>
+              <button type="button" class="btn btn-border">2</button>
+              <button type="button" class="btn btn-border">-</button>
+            </div>
+          </div>
+        </div>
+        <div class="shopping-total mt-3">
+          <p class="text-center">المجموع: 80$</p>
+          <button class="btn btn-color w-100 mb-3">عرض السلة</button>
+          <button class="btn btn-color w-100">اتمام الطلب</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- login -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="login"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">تسجبل الدخول</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >البريد الالكتروني</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >كلمة المرور</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1">تذكرني</label>
+            </div>
+            <button type="submit" class="btn btn-login w-100">دخول</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- fav -->
+
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="fav"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">المفضلة</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="row">
+            <div
+              class="col shopping-card d-flex justify-content-around align-items-center"
+            >
+              <img class="img-fluid w-25" src="./images/pro/pro4.png" alt="" />
+              <p>سرخس البوسطن</p>
+              <div class="btn-group">
+                <button type="button" class="btn btn-border">ازالة</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row">
+            <div
+              class="col shopping-card d-flex justify-content-around align-items-center"
+            >
+              <img class="img-fluid w-25" src="./images/pro/pro11.png" alt="" />
+              <p>البوثوس</p>
+              <div class="btn-group">
+                <button type="button" class="btn btn-border">ازالة</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row">
+            <div
+              class="col shopping-card d-flex justify-content-around align-items-center"
+            >
+              <img class="img-fluid w-25" src="./images/pro/pro4.png" alt="" />
+              <p>سرخس البوسطن</p>
+              <div class="btn-group">
+                <button type="button" class="btn btn-border">ازالة</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
